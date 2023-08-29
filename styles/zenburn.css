@@ -57,3 +57,11 @@ iframe, img {
 div.figure {
     padding: 0;
 }
+
+div.emphasis {
+    border-radius: 3px;
+    background-color: var(--fg-white);
+    color: var(--bg-grey);
+    font-family: monospace;
+    padding: 8pt;
+}

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-08-29 Tue 06:32 -->
+<!-- 2023-08-29 Tue 07:19 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>LinkedIn embeds</title>
@@ -202,7 +202,7 @@ LinkedIn has an "Embed this post" option in the hamburger menu of some posts.
 </p>
 
 
-<div id="orgd67368d" class="figure">
+<div id="org232850e" class="figure">
 <p><img src="../images/2023-08-29_13-23.png" alt="2023-08-29_13-23.png" />
 </p>
 </div>
@@ -217,7 +217,7 @@ It generates some html code containing an <code>/embed</code> URL that you can c
 </div>
 
 <p>
-For some reason, this embed option doesn't exist on older posts, and embedding the normal "share" URL results in a chorus of pissed elf screeching.
+For some reason, this embed option doesn't exist on older posts, and embedding the "copy link to post" URL results in a chorus of pissed elf screeching.
 </p>
 
 <p>
@@ -225,7 +225,7 @@ For example,
 </p>
 
 <div class="org-src-container">
-<pre class="src src-html">&lt;iframe src="https://www.linkedin.com/posts/ductf_cybersecurity-ctf-infosec-activity-7101497134004281344-ilnh?utm_source=share" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"&gt;&lt;/iframe&gt;
+<pre class="src src-html">&lt;iframe src="https://www.linkedin.com/posts/chuanshu-jiang-25aa88184_a-big-thank-you-to-chuanshu-jiang-for-the-activity-7080300564386889729-X_Ss?utm_source=share&amp;utm_medium=member_desktop" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"&gt;&lt;/iframe&gt;
 </pre>
 </div>
 
@@ -233,25 +233,38 @@ For example,
 (Here come the elves)
 </p>
 
-<iframe src="https://www.linkedin.com/posts/ductf_cybersecurity-ctf-infosec-activity-7101497134004281344-ilnh?utm_source=share" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
+<iframe src="https://www.linkedin.com/posts/chuanshu-jiang-25aa88184_a-big-thank-you-to-chuanshu-jiang-for-the-activity-7080300564386889729-X_Ss?utm_source=share&utm_medium=member_desktop" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
 
 <p>
 I really wanted to get this embed thing working on an older post, so I had a nose around LinkedIn's feed API.
 </p>
-<div id="outline-container-org82de772" class="outline-2">
-<h2 id="org82de772">Solution</h2>
-<div class="outline-text-2" id="text-org82de772">
+
+<hr />
+
+<div id="outline-container-org394a42d" class="outline-2">
+<h2 id="org394a42d">Solution</h2>
+<div class="outline-text-2" id="text-org394a42d">
 <p>
-Turns out, you can actually reliably create an <code>/embed</code> link by using the post's activity ID, which follows <code>activity-</code> in the share URL.
+Turns out, you can actually reliably create an <code>/embed</code> link by using the post's activity ID, which follows <code>activity-</code> in the "copy link to post" URL.
 </p>
-<pre class="example">
-https://www.linkedin.com/embed/feed/update/urn:li:activity:{activity_id}
-</pre>
 
 <p>
-I have no idea why this works, but voila.
+For example,
 </p>
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7101497134004281344" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
+
+<div class="emphasis"> https://www.linkedin.com/posts/chuanshu-jiang-25aa88184_a-big-thank-you-to-chuanshu-jiang-for-the-activity-<b>7080300564386889729</b>-X_Ss?utm_source=share&utm_medium=member_desktop</div>
+
+<p>
+Becomes
+</p>
+
+<div class="emphasis"> https://www.linkedin.com/embed/feed/update/urn:li:activity:​<b>7080300564386889729</b></div>
+
+<p>
+The second URL can be iframed, but the first one can't. I have no idea why the second URL exists, but voila.
+</p>
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7080300564386889729" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
 
 <p>
 I don't really have the time to figure out the rest of this API, and this blog isn't about LinkedIn scraping. Just throwing this onto the internet in case it can help someone stuck in a similar sitch.
@@ -260,7 +273,7 @@ I don't really have the time to figure out the rest of this API, and this blog i
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2023-08-29 Tue 06:32</p>
+<p class="date">Created: 2023-08-29 Tue 07:19</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -1,5 +1,5 @@
 #+Title: LinkedIn embeds
-#+options: toc:nil num:nil
+#+options: toc:nil num:nil ^:nil
 
 LinkedIn has an "Embed this post" option in the hamburger menu of some posts.
 
@@ -11,32 +11,40 @@ It generates some html code containing an =/embed= URL that you can chuck onto a
   <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7101497133287047168" allowfullscreen="" title="Embedded post" width="504" height="459" frameborder="0"></iframe>
 #+end_src
 
-For some reason, this embed option doesn't exist on older posts, and embedding the normal "share" URL results in a chorus of pissed elf screeching.
+For some reason, this embed option doesn't exist on older posts, and embedding the "copy link to post" URL results in a chorus of pissed elf screeching.
 
 For example,
 
 #+BEGIN_src html
-<iframe src="https://www.linkedin.com/posts/ductf_cybersecurity-ctf-infosec-activity-7101497134004281344-ilnh?utm_source=share" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
+<iframe src="https://www.linkedin.com/posts/chuanshu-jiang-25aa88184_a-big-thank-you-to-chuanshu-jiang-for-the-activity-7080300564386889729-X_Ss?utm_source=share&utm_medium=member_desktop" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
 #+END_src
 
 (Here come the elves)
 
 #+BEGIN_EXPORT html
-<iframe src="https://www.linkedin.com/posts/ductf_cybersecurity-ctf-infosec-activity-7101497134004281344-ilnh?utm_source=share" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
+<iframe src="https://www.linkedin.com/posts/chuanshu-jiang-25aa88184_a-big-thank-you-to-chuanshu-jiang-for-the-activity-7080300564386889729-X_Ss?utm_source=share&utm_medium=member_desktop" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
 #+END_EXPORT
 
 I really wanted to get this embed thing working on an older post, so I had a nose around LinkedIn's feed API.
+
+-----
+
 * Solution
 
-Turns out, you can actually reliably create an =/embed= link by using the post's activity ID, which follows =activity-= in the share URL.
-#+begin_src
-https://www.linkedin.com/embed/feed/update/urn:li:activity:{activity_id}
-#+end_src
+Turns out, you can actually reliably create an =/embed= link by using the post's activity ID, which follows =activity-= in the "copy link to post" URL.
 
-I have no idea why this works, but voila.
-#+HTML:
+For example,
+
+#+HTML:<div class="emphasis"> https://www.linkedin.com/posts/chuanshu-jiang-25aa88184_a-big-thank-you-to-chuanshu-jiang-for-the-activity-<b>7080300564386889729</b>-X_Ss?utm_source=share&utm_medium=member_desktop</div>
+
+Becomes
+
+#+HTML: <div class="emphasis"> https://www.linkedin.com/embed/feed/update/urn:li:activity:​<b>7080300564386889729</b></div> 
+
+The second URL can be iframed, but the first one can't. I have no idea why the second URL exists, but voila.
+
 #+BEGIN_EXPORT html
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7101497134004281344" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7080300564386889729" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
 #+END_EXPORT
 
 I don't really have the time to figure out the rest of this API, and this blog isn't about LinkedIn scraping. Just throwing this onto the internet in case it can help someone stuck in a similar sitch.

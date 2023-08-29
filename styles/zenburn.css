@@ -1,0 +1,54 @@
+/* Colours! */
+:root {
+    --fg-white: #dcdccc;
+    --bg-grey: #3f3f3f;
+    --brown: #705050;
+    --green: #60b48a;
+    --dark-green: #709080;
+    --peach: #dfaf8f;
+    --navy: #506070;
+    --rose: #dc8cc3;
+    --beige: #dcdccc;
+    --dark-beige: #c3bf9f;
+    --coral: #dca3a3;
+    --yellow: #f0dfaf;
+    --powder-blue: #94bff3;
+    --teal: #93e0e3;
+    --dark-teal: #8cd0d3;
+    --pink: #ec93d3;
+}
+
+h1 {
+    font-family: "Times New Roman", serif;
+}
+
+h2 {
+    font-family: "Times New Roman", serif;
+}
+
+body {
+    margin: 5vh 8vw 5vh 8vw;
+    background-color: var(--bg-grey);
+    color: var(--fg-white);
+    font-family: "Ariel", sans-serif;
+}
+      
+a {
+    color: var(--dark-green);
+}
+
+table {
+    width: 100%;
+}
+
+pre {
+    white-space: pre-wrap;
+    background-color: var(--fg-white);
+    color: var(--bg-grey);
+    border: 0;
+}
+
+iframe, img {
+    display: block;
+    margin: auto;
+}

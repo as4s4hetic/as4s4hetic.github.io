@@ -1,6 +1,6 @@
 (defvar blogs-dir "./blogs")
 (defvar index-blurb "./blurb.org")
-(defvar org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"/styles/zenburn.css\" />")
+(setq org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"/styles/zenburn.css\" />")
 
 (defun directory-files-rel (dir reg)
   (mapcar (lambda (x) (concat dir "/" x))

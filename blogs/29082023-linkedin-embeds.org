@@ -1,0 +1,43 @@
+#+Title: LinkedIn embeds
+#+options: toc:nil num:nil
+
+LinkedIn has an "Embed this post" option in the hamburger menu of some posts.
+
+[[../images/2023-08-29_13-23.png]]
+
+It generates some html code containing an =/embed= URL that you can chuck onto a webpage without pissing off the [[https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options][magic elves inside your reader's browser]].
+
+#+begin_src html
+  <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7101497133287047168" allowfullscreen="" title="Embedded post" width="504" height="459" frameborder="0"></iframe>
+#+end_src
+
+For some reason, this embed option doesn't exist on older posts, and embedding the normal "share" URL results in a chorus of pissed elf screeching.
+
+For example,
+
+#+BEGIN_src html
+<iframe src="https://www.linkedin.com/posts/ductf_cybersecurity-ctf-infosec-activity-7101497134004281344-ilnh?utm_source=share" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
+#+END_src
+
+(Here come the elves)
+
+#+BEGIN_EXPORT html
+<iframe src="https://www.linkedin.com/posts/ductf_cybersecurity-ctf-infosec-activity-7101497134004281344-ilnh?utm_source=share" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
+#+END_EXPORT
+
+I really wanted to get this embed thing working on an older post, so I had a nose around LinkedIn's feed API
+* Solution
+
+Turns out, you can actually reliably create an =/embed= link by using the post's activity ID, which follows =activity-= in the share URL.
+#+begin_src
+https://www.linkedin.com/embed/feed/update/urn:li:activity:{activity_id}
+#+end_src
+
+I have no idea why this works, but voila.
+#+HTML:
+#+BEGIN_EXPORT html
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7101497134004281344" allowfullscreen="" title="Embedded post" width="504" height="375" frameborder="0"></iframe>
+#+END_EXPORT
+
+I don't really have the time to figure out the rest of this API, and this blog isn't about LinkedIn scraping. Just throwing this onto the internet in case it can help someone stuck in a similar sitch.
+

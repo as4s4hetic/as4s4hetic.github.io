@@ -1,9 +1,0 @@
-#+Title: LinkedIn embeds
-
-LinkedIn has this "Embed this post" option in the hamburger menu of recent posts. It creates a
-
-#+begin_src html
-  <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7101497133287047168" allowfullscreen="" title="Embedded post" width="504" height="459" frameborder="0"></iframe>
-#+end_src
-
-[[../images/2023-08-29_13-23.png]]

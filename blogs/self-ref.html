@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-08-30 Wed 09:02 -->
+<!-- 2023-08-30 Wed 08:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Blorg</title>
+<title>Self-referential blorg</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -196,44 +196,21 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Blorg</h1>
-<p>
-Hello! Welcome to my blorg! It's like a normal blog, but written in <a href="https://orgmode.org/">org mode</a>.
-</p>
-
-<p>
-Some things about me:
-</p>
-<ul class="org-ul">
-<li><a href="https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach">I am a strange loop</a></li>
-<li>I like puzzles, CTFs, linguistics, and maths (roughly in that order)</li>
-<li><a href="https://au.linkedin.com/in/chuanshu-jiang-25aa88184">I work as a security consultant</a></li>
-<li><a href="https://twitter.com/0xchsh">I make memes sometimes</a></li>
-</ul>
-
-<hr />
-
-<div id="outline-container-org9a4c4e7" class="outline-2">
-<h2 id="org9a4c4e7"><a href="./blogs/self-ref.html">Self-referential blorg</a></h2>
-<div class="outline-text-2" id="text-org9a4c4e7">
-<p>
-2023-08-30
-</p>
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #b3b3b3;">#+TITLE:</span> <span style="color: #8CD0D3; background-color: #3F3F3F; font-weight: bold;">Self-referential blorg</span>
+<span style="color: #b3b3b3;">#+DATE:</span> <span style="color: #8CD0D3;">&lt;2023-08-30 Wed&gt;</span>
+<span style="color: #7F9F7F;">#+OPTIONS: title:nil date:nil html-postamble:nil</span>
+<span style="color: #7F9F7F;">#+INCLUDE: "./self-ref.org" src org</span>
+<span style="color: #7F9F7F;">#+BEGIN_EXPORT html</span>
+<span style="color: #5F7F5F; background-color: #494949;">&lt;!--</span>
+<span style="color: #7F9F7F; background-color: #494949;">This is the org file used by my static site generator to create the page you are visiting right now! And by static site generator I mean my text editor, obviously :)</span>
+<span style="color: #5F7F5F; background-color: #494949;">--&gt;</span>
+<span style="color: #7F9F7F;">#+END_EXPORT</span>
+</pre>
 </div>
-</div>
-
-<div id="outline-container-org0eaf60c" class="outline-2">
-<h2 id="org0eaf60c"><a href="./blogs/29082023-linkedin-embeds.html">LinkedIn embeds</a></h2>
-<div class="outline-text-2" id="text-org0eaf60c">
-<p>
-2023-08-29
-</p>
-</div>
-</div>
-</div>
-<div id="postamble" class="status">
-<p class="date">Created: 2023-08-30 Wed 09:02</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<!--
+This is the org file used by my static site generator to create the page you are visiting right now! And by static site generator I mean my text editor, obviously :)
+-->
 </div>
 </body>
 </html>

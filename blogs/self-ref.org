@@ -1,0 +1,9 @@
+#+TITLE: Self-referential blorg
+#+DATE: <2023-08-30 Wed>
+#+OPTIONS: title:nil date:nil html-postamble:nil
+#+INCLUDE: "./self-ref.org" src org
+#+BEGIN_EXPORT html
+<!--
+This is the org file used by my static site generator to create the page you are visiting right now! And by static site generator I mean my text editor, obviously :)
+-->
+#+END_EXPORT

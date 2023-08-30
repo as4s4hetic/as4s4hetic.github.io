@@ -23,9 +23,8 @@
     (kill-buffer (current-buffer))))
 
 (defun updated-p (f)
-  (interactive)
   (let ((html-file (replace-org-html f)))
-    (if (not (file-exists-p f))
+    (if (not (file-exists-p html-file))
 	t
       (let ((org-last-updated (get-last-modified f))
 	    (html-last-updated (get-last-modified html-file)))
@@ -41,7 +40,7 @@
 
 (export-blogs blorgs)
 
-;; make index
+;; index
 
 (setq index-head "#+OPTIONS: toc:nil num:nil
 #+TITLE: Blorg
@@ -67,14 +66,30 @@
     (kill-buffer (current-buffer)))
   date)
 
+;; sort blogs by date created
+
+(setq blog-properties (mapcar (lambda (x) (list
+					   (replace-org-html x)
+					   (org-title x)
+					   (org-date x)))
+			      blorgs))
+
+(defun blog> (x y)
+  (string> (caddr x) (caddr y)))
+  
+(defun sort-blogs (blogs)
+  (sort blogs 'blog>))
+
+(setq blog-properties (sort-blogs blog-properties))
+
 (defun make-blog-list (l)
   (if (not l)
       ""
-    (let ((file (car l)))
+    (let ((blog (car l)))
       (format list-format
-	      (replace-org-html file)
-	      (org-title file)
-	      (org-date file)
+	      (car blog)
+	      (cadr blog)
+	      (caddr blog)
               (make-blog-list (cdr l))))))
 
 (defun insert-file-as-string (f)
@@ -90,7 +105,7 @@
   (erase-buffer)
   (insert index-head)
   (insert-file-as-string index-blurb)
-  (insert (make-blog-list blorgs))
+  (insert (make-blog-list blog-properties))
   (save-buffer)
   (org-html-export-to-html)
   (kill-buffer (current-buffer)))

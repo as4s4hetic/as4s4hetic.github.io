@@ -1,0 +1,14 @@
+#+TITLE: Gold Bug Puzzle Hunt
+#+DATE: <2023-08-30 Wed>
+
+So I went to my first DEFCON this year, and was not remotely prepared for the sheer amount of competitions, games, and pure mischief that it offered. Luckily, before I could become overwhelmed with decision-making anxiety at the prospect of choosing an activity, I noticed the Gold Bug puzzle hunt folks in the competition hall.
+
+I was once an avid puzzler (n. one who participates in puzzle hunts) and puzzling (v. the act of participating in a puzzle hunt) has in an odd way shaped my life as it is now. Personal lore aside, I vaguely remembered seeing a Gold Bug hunt listed on the [[http://puzzlehuntcalendar.com/][Puzzle Hunt Calendar]] some years prior. That little bit of nostalgia (and the sick trophy) was enough incentive for me to immediately become tunnel visioned on this competition.
+
+[[../images/goldbug.png]]
+
+The hunt was really fun. I had a hand in solving most of the puzzles, but I particularly enjoyed the Arcade for its cute interface, and the Meta puzzle, which turned out to have quite an elegant mechanism. The puzzles ranged from conventional hunt-style to challenges that could have belonged in the Cryptography category of a CTF (at least to someone who mostly just watches the Crypto CTFers juggle their funny numbers). 
+
+The only thing better than puzzling is puzzling with friends, and thanks to my elite nerd-sniping skills, I happened to be conning defs with a bunch of friends who were just as eager to get this bug as I was. The rest goes without saying - I've since heard that it's a typical defcon experience. All nighters were pulled, meals were skipped, showers were... you get the point. We ended up winning the bug though, so I reckon it was all worth it.
+
+In case you try and get stuck on any of the puzzles, my team wrote up all the solutions [[https://hackmd.io/@oce-best/SkRXMyPh3][here]]. Be warned though, it contains major spoilers.

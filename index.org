@@ -4,8 +4,9 @@ Hello! Welcome to my blorg! It's like a normal blog, but written in [[https://or
 
 Some things about me:
 - [[https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach][I am a strange loop]]
-- I like puzzles, CTFs, linguistics, and maths (roughly in that order)
+- I like puzzles, CTFs, linguistics, and maths
 - [[https://au.linkedin.com/in/chuanshu-jiang-25aa88184][I work as a security consultant]]
+- [[https://haxx.group/][I teach hackers]]
 - [[https://twitter.com/0xchsh][I make memes sometimes]]
 
 -----

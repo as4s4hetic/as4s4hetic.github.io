@@ -43,9 +43,8 @@ table {
 
 pre {
     white-space: pre-wrap;
-    background-color: var(--fg-white);
-    color: var(--bg-grey);
-    border: 0;
+    background-color: var(--bg-grey);
+    border-color: var(--fg-white);
 }
 
 iframe, img {

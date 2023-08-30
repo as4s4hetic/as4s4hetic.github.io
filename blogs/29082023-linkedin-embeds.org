@@ -1,4 +1,4 @@
-#+Title: LinkedIn embeds
+#+TITLE: LinkedIn embeds
 #+DATE: <2023-08-29 Tue>
 #+options: toc:nil num:nil ^:nil
 

@@ -6,6 +6,9 @@
   (mapcar (lambda (x) (concat dir "/" x))
 	  (directory-files dir nil reg)))
 
+(defun get-last-modified (f)
+  (nth 5 (file-attributes f)))
+
 (setq blorgs (directory-files-rel blogs-dir ".org$"))
 
 (defun replace-org-html (s)
@@ -19,9 +22,6 @@
     (org-html-export-to-html)
     (kill-buffer (current-buffer))))
 
-(defun get-last-modified (f)
-  (format-time-string "%Y-%m-%d %T" (nth 5 (file-attributes f))))
-
 (defun updated-p (f)
   (interactive)
   (let ((html-file (replace-org-html f)))
@@ -29,7 +29,7 @@
 	t
       (let ((org-last-updated (get-last-modified f))
 	    (html-last-updated (get-last-modified html-file)))
-	(string< html-last-updated org-last-updated )))))	
+	(time-less-p html-last-updated org-last-updated )))))	
 
 (defun export-blogs (blog-list)
   (while blog-list
@@ -46,7 +46,9 @@
 (setq index-head "#+OPTIONS: toc:nil num:nil
 #+TITLE: Blorg
 ")
-(setq list-format "* [[%s][%s]]
+(setq list-format "
+* [[%s][%s]]
+%s
 %s")
 
 (defun org-title (f)
@@ -56,6 +58,15 @@
     (kill-buffer (current-buffer)))
   title)
 
+(defun org-date (f)
+  (save-excursion
+    (find-file f)
+    (setq date (substring 
+		(cadar (org-collect-keywords '("date")))
+		1 -5))
+    (kill-buffer (current-buffer)))
+  date)
+
 (defun make-blog-list (l)
   (if (not l)
       ""
@@ -63,6 +74,7 @@
       (format list-format
 	      (replace-org-html file)
 	      (org-title file)
+	      (org-date file)
               (make-blog-list (cdr l))))))
 
 (defun insert-file-as-string (f)

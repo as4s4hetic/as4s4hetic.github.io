@@ -1,4 +1,5 @@
 #+Title: LinkedIn embeds
+#+DATE: <2023-08-29 Tue>
 #+options: toc:nil num:nil ^:nil
 
 LinkedIn has an "Embed this post" option in the hamburger menu of some posts.

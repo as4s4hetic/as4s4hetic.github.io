@@ -1,5 +1,5 @@
-(defvar blogs-dir "./blogs")
-(defvar index-blurb "./blurb.org")
+(setq blogs-dir "./blogs")
+(setq index-blurb "./blurb.org")
 (setq org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"/styles/zenburn.css\" />")
 
 (defun directory-files-rel (dir reg)
@@ -7,6 +7,9 @@
 	  (directory-files dir nil reg)))
 
 (setq blorgs (directory-files-rel blogs-dir ".org$"))
+
+(defun replace-org-html (s)
+  (concat (substring s 0 -4) ".html"))
 
 ;; export blogs
 
@@ -16,14 +19,34 @@
     (org-html-export-to-html)
     (kill-buffer (current-buffer))))
 
-(mapc 'export-file blorgs)
+(defun get-last-modified (f)
+  (format-time-string "%Y-%m-%d %T" (nth 5 (file-attributes f))))
+
+(defun updated-p (f)
+  (interactive)
+  (let ((html-file (replace-org-html f)))
+    (if (not (file-exists-p f))
+	t
+      (let ((org-last-updated (get-last-modified f))
+	    (html-last-updated (get-last-modified html-file)))
+	(string< html-last-updated org-last-updated )))))	
+
+(defun export-blogs (blog-list)
+  (while blog-list
+    (let ((blog (car blog-list)))
+      (if (updated-p blog)
+	  (export-file blog)
+	nil))
+    (setq blog-list (cdr blog-list))))
+
+(export-blogs blorgs)
 
 ;; make index
 
-(defvar index-head "#+OPTIONS: toc:nil
+(setq index-head "#+OPTIONS: toc:nil num:nil
 #+TITLE: Blorg
 ")
-(defvar list-format "- [[%s][%s]]
+(setq list-format "* [[%s][%s]]
 %s")
 
 (defun org-title (f)
@@ -36,10 +59,10 @@
 (defun make-blog-list (l)
   (if (not l)
       ""
-    (let (file (car l))
+    (let ((file (car l)))
       (format list-format
-	      (concat (substring (car l) 0 -4) ".html")
-	      (org-title (car l))
+	      (replace-org-html file)
+	      (org-title file)
               (make-blog-list (cdr l))))))
 
 (defun insert-file-as-string (f)

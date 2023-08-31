@@ -36,11 +36,11 @@ Turns out, you can actually reliably create an =/embed= link by using the post's
 
 For example,
 
-#+HTML:<div class="emphasis"> https://www.linkedin.com/posts/chuanshu-jiang-25aa88184_a-big-thank-you-to-chuanshu-jiang-for-the-activity-<b>7080300564386889729</b>-X_Ss?utm_source=share&utm_medium=member_desktop</div>
+#+HTML:<div class="mono">https://www.linkedin.com/posts/chuanshu-jiang-25aa88184_a-big-thank-you-to-chuanshu-jiang-for-the-activity-<b>7080300564386889729</b>-X_Ss?utm_source=share&utm_medium=member_desktop</div>
 
 Becomes
 
-#+HTML: <div class="emphasis"> https://www.linkedin.com/embed/feed/update/urn:li:activity:​<b>7080300564386889729</b></div> 
+#+HTML: <div class="mono">https://www.linkedin.com/embed/feed/update/urn:li:activity:​<b>7080300564386889729</b></div> 
 
 The second URL can be iframed, but the first one can't. I have no idea why the second URL exists, but voila.
 

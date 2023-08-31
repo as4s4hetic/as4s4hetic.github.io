@@ -1,0 +1,8 @@
+#+TITLE: In search of lost parentheses
+#+DATE: <2023-08-31 Thu>
+* Resources
+- [[https://www.cs.cmu.edu/~dst/LispBook/book.pdf][Common Lisp: A Gentle Introduction to Symbolic Computation]]
+- [[https://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/cltl2.html][Common Lisp the Language, 2nd Edition]]
+- [[https://gigamonkeys.com/book/][Practical Common Lisp]]
+- [[https://web.mit.edu/6.001/6.037/sicp.pdf][Structure and Interpretation of Computer Programs]]
+- [[https://lispcookbook.github.io/cl-cookbook/][The Common Lisp Cookbook]]

@@ -1,5 +1,6 @@
 (setq blogs-dir "./blogs")
 (setq index-blurb "./blurb.org")
+(setq index-title "Blorg")
 (setq org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"/styles/zenburn.css\" />")
 
 (defun directory-files-rel (dir reg)
@@ -42,9 +43,10 @@
 
 ;; index
 
-(setq index-head "#+OPTIONS: toc:nil num:nil
-#+TITLE: Blorg
-")
+(setq index-head (format "#+OPTIONS: toc:nil num:nil
+#+TITLE: %s
+" index-title))
+
 (setq list-format "
 * [[%s][%s]]
 %s

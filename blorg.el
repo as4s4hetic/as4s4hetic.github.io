@@ -1,10 +1,15 @@
 (setq blogs-dir "./blogs")
+(setq styles-dir "./styles")
 (setq index-blurb "./blurb.org")
 (setq index-title "Blorg")
-(setq org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"/styles/zenburn.css\" />")
-
+(setq curr-dir (file-name-directory buffer-file-name))
+      
 (defun directory-files-rel (dir reg)
   (mapcar (lambda (x) (concat dir "/" x))
+	  (directory-files dir nil reg)))
+
+(defun directory-files-abs (dir reg)
+  (mapcar (lambda (x) (concat (substring dir 1) "/" x))
 	  (directory-files dir nil reg)))
 
 (defun get-last-modified (f)
@@ -14,6 +19,20 @@
 
 (defun replace-org-html (s)
   (concat (substring s 0 -4) ".html"))
+
+(defun concat-list (list)
+  (let ((head (car list)))
+    (if (not head)
+	""
+      (concat head (concat-list (cdr list))))))
+
+;; make header with all styles in styles-dir
+
+(defun make-style-head (file)
+  (format "<link rel=\"stylesheet\" type=\"text/css\" href=\"%s\" />" file))
+
+(setq org-html-head
+      (concat-list (mapcar 'make-style-head (directory-files-abs styles-dir ".css$"))))
 
 ;; export blogs
 
@@ -40,6 +59,12 @@
     (setq blog-list (cdr blog-list))))
 
 (export-blogs blorgs)
+
+;; function to re-export all blogs e.g. if styling changes
+
+(defun export-all-blogs ()
+  (interactive)
+  (mapcar 'export-file blorgs))
 
 ;; index
 

@@ -11,6 +11,9 @@ Some things about me:
 
 -----
 
+* [[./blogs/lisp.html][Learn yourself a lisp]]
+2023-09-01
+
 * [[./blogs/goldbug-2023.html][Gold Bug Puzzle Hunt]]
 2023-08-30
 

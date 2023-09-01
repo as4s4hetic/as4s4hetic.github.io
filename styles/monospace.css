@@ -1,0 +1,14 @@
+blockquote {
+    font-style: italic;
+}
+
+div.mono {
+    background-color: var(--bg-grey);
+    border: 1px solid;
+    border-color: var(--fg-white);
+    border-radius: 3px;
+    font-family: monospace;
+    padding: 8pt;
+    white-space: pre-wrap;
+ }
+

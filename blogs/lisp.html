@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-09-01 Fri 12:39 -->
+<!-- 2023-09-01 Fri 14:59 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Self-referential blorg</title>
+<title>Learn yourself a lisp</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -192,25 +192,140 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link rel="stylesheet" type="text/css" href="/styles/monospace.css" /><link rel="stylesheet" type="text/css" href="/styles/zenburn.css" />
+<link rel="stylesheet" type="text/css" href="/styles/dialogue.css" /><link rel="stylesheet" type="text/css" href="/styles/footers.css" /><link rel="stylesheet" type="text/css" href="/styles/monospace.css" /><link rel="stylesheet" type="text/css" href="/styles/zenburn.css" />
 </head>
 <body>
 <div id="content" class="content">
-<div class="org-src-container">
-<pre class="src src-org"><span style="color: #b3b3b3;">#+TITLE:</span> <span style="color: #8CD0D3; background-color: #3F3F3F; font-weight: bold;">Self-referential blorg</span>
-<span style="color: #b3b3b3;">#+DATE:</span> <span style="color: #8CD0D3;">&lt;2023-08-30 Wed&gt;</span>
-<span style="color: #7F9F7F;">#+OPTIONS: title:nil date:nil html-postamble:nil</span>
-<span style="color: #7F9F7F;">#+INCLUDE: "./self-ref.org" src org</span>
-<span style="color: #7F9F7F;">#+BEGIN_EXPORT html</span>
-<span style="color: #5F7F5F; background-color: #494949;">&lt;!--</span>
-<span style="color: #7F9F7F; background-color: #494949;">This is the org file used by my static site generator to create the page you are visiting right now! And by static site generator I mean my text editor, obviously :)</span>
-<span style="color: #5F7F5F; background-color: #494949;">--&gt;</span>
-<span style="color: #7F9F7F;">#+END_EXPORT</span>
-</pre>
+<h1 class="title">Learn yourself a lisp</h1>
+<blockquote>
+<p>
+A friend of mine was once interviewing an engineer for a programming job and asked him a typical interview question: how do you know when a function or method is too big? Well, said the candidate, I don't like any method to be bigger than my head. You mean you can't keep all the details in your head? No, I mean I put my head up against my monitor, and the code shouldn't be bigger than my head. &#x2014;Peter Seibel, Practical Common Lisp
+</p>
+</blockquote>
+
+
+<div id="org64bf7e4" class="figure">
+<p><img src="https://imgs.xkcd.com/comics/lisp_cycles.png" alt="lisp_cycles.png" />
+</p>
 </div>
-<!--
-This is the org file used by my static site generator to create the page you are visiting right now! And by static site generator I mean my text editor, obviously :)
--->
+
+<p>
+<div id="year">This is a blog written mostly to motivate myself, and hopefully someone who stumbles upon it, to keep learning and writing lisps. One may ask: "What can I even do with lisp in {YEAR}?", and my answer to that would be: almost anything, but you <i>probably shouldn't. That would make it like JavaScript</i> <sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>.
+</p>
+
+<p>
+Don't get me wrong, I'm not a functional purist by any means, <del>I can barely function on a good day,</del> and although I don't mind a bit of Haskell snobbery, if you asked me what a monad was, I'd probably panic and stutter and and tell you something incorrect. My job requires a fair bit of programming, but more importantly it requires literacy in pretty much all the languages under the sun, so I can browse through other (rushed and often mistreated) people's code to make sure none of it is hiding anything oogly boogly. This has regrettably caused in me an attitude shift towards programming. Take, for example, the following conversation I had with a friend, J:
+</p>
+
+<p>
+</div>
+</p>
+
+<script type = "text/javascript">
+    function getDate() {
+        var dt = new Date();
+        y = dt.getYear()+1900;
+        var r = document.getElementById('year');
+        r.innerHTML = r.innerHTML.replace("{YEAR}",y);
+    }
+    getDate();
+</script>
+
+<table class="dialogue">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Me</td>
+<td class="org-left">listen to this goofy definition: "a list is a chain of conses in which the car of each cons is an element of the list, and the cdr of each cons is either the next link in the chain or a terminating atom".<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup></td>
+</tr>
+
+<tr>
+<td class="org-left">Me</td>
+<td class="org-left">&#x2026;</td>
+</tr>
+
+<tr>
+<td class="org-left">Me</td>
+<td class="org-left">&#x2026;now that I've said that out loud, it makes total sense.</td>
+</tr>
+
+<tr>
+<td class="org-left">J</td>
+<td class="org-left">yeah it does.</td>
+</tr>
+
+<tr>
+<td class="org-left">Me</td>
+<td class="org-left">but it isn't how <i>Learn Python in 7 Minutes</i> would have defined it.</td>
+</tr>
+
+<tr>
+<td class="org-left">J</td>
+<td class="org-left">&#x2026;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+I guess you either die a hero, or live to see yourself become the villain. I feel like I don't properly learn things anymore, let alone derive happiness from doing so. Recently I found myself needing to reference the quote on the top of this blog. It's managed to stick to me for the five or so years since I'd come across it. I had forgotten where it was from, and found myself searching through old lisp textbooks for similar quotes and anecdotes. In doing so, I was unexpectedly hit with a strong sense of nostalgia, and memories of a better time. That was when I got the idea to write this blog post.
+</p>
+
+<p>
+But enough melancholy babble for now, below are some resources to help you become acquainted with common lisp. It's a pretty good starting point, and you could always pivot to clojure or racket or something. There's also a list of lisp projects I use personally and would recommend.
+</p>
+
+<div id="outline-container-org421a1e0" class="outline-2">
+<h2 id="org421a1e0"><span class="section-number-2">1.</span> Resources</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li><a href="https://www.cs.cmu.edu/~dst/LispBook/book.pdf">Common Lisp: A Gentle Introduction to Symbolic Computation</a></li>
+<li><a href="https://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/cltl2.html">Common Lisp the Language, 2nd Edition</a></li>
+<li><a href="https://gigamonkeys.com/book/">Practical Common Lisp</a></li>
+<li><a href="https://web.mit.edu/6.001/6.037/sicp.pdf">Structure and Interpretation of Computer Programs</a></li>
+<li><a href="https://lispcookbook.github.io/cl-cookbook/">The Common Lisp Cookbook</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc144d45" class="outline-2">
+<h2 id="orgc144d45"><span class="section-number-2">2.</span> Projects</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+I'm currently interested in the following lisp projects. Hopefully this list increases with time.
+</p>
+
+<ul class="org-ul">
+<li>GNU Guix</li>
+<li>StumpWM</li>
+<li>Emacs</li>
+</ul>
+
+<p>
+I've also recently been made aware of <a href="https://www.gnu.org/software/mes/">GNU Mes</a>, which is pretty cool as a concept.
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">There are languages that are good and holy, and then there are languages like JavaScript.</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">this is how the List class is defined in <a href="http://clhs.lisp.se/Body/t_list.htm">http://clhs.lisp.se/Body/t_list.htm</a></p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="date">Date: 2023-09-01 Fri 00:00</p>
+<p class="date">Created: 2023-09-01 Fri 14:59</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

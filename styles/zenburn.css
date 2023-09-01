@@ -41,7 +41,7 @@ table {
     width: 100%;
 }
 
-pre, div.mono {
+pre {
     white-space: pre-wrap;
     background-color: var(--bg-grey);
     border-color: var(--fg-white);
@@ -57,23 +57,3 @@ div.figure {
     padding: 0;
 }
 
-div.mono {
-    border: 1px solid;
-    border-radius: 3px;
-    background-color: var(--bg-grey);
-    border-color: var(--fg-white);
-    font-family: monospace;
-    padding: 8pt;
- }
-
-blockquote {
-    font-style: italic;
-}
-
-div.footpara {
-    font-size: 13px;
-}
-
-sup {
-    font-size: 10px;
-}

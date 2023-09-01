@@ -1,0 +1,54 @@
+#+TITLE: Learn yourself a lisp
+#+DATE: <2023-09-01 Fri>
+#+OPTIONS: toc:nil
+#+BEGIN_QUOTE
+A friend of mine was once interviewing an engineer for a programming job and asked him a typical interview question: how do you know when a function or method is too big? Well, said the candidate, I don't like any method to be bigger than my head. You mean you can't keep all the details in your head? No, I mean I put my head up against my monitor, and the code shouldn't be bigger than my head. ---Peter Seibel, Practical Common Lisp
+#+END_QUOTE
+
+[[https://imgs.xkcd.com/comics/lisp_cycles.png]]
+
+@@html:<div id="year">@@This is a blog written mostly to motivate myself, and hopefully someone who stumbles upon it, to keep learning and writing lisps. One may ask: "What can I even do with lisp in {YEAR}?", and my answer to that would be: almost anything, but you /probably shouldn't. That would make it like JavaScript/ [fn:: There are languages that are good and holy, and then there are languages like JavaScript.].
+
+Don't get me wrong, I'm not a functional purist by any means, +I can barely function on a good day,+ and although I don't mind a bit of Haskell snobbery, if you asked me what a monad was, I'd probably panic and stutter and and tell you something incorrect. My job requires a fair bit of programming, but more importantly it requires literacy in pretty much all the languages under the sun, so I can browse through other (rushed and often mistreated) people's code to make sure none of it is hiding anything oogly boogly. This has regrettably caused in me an attitude shift towards programming. Take, for example, the following conversation I had with a friend, J:
+
+@@html:</div>@@
+
+#+BEGIN_EXPORT html
+<script type = "text/javascript">
+    function getDate() {
+        var dt = new Date();
+        y = dt.getYear()+1900;
+        var r = document.getElementById('year');
+        r.innerHTML = r.innerHTML.replace("{YEAR}",y);
+    }
+    getDate();
+</script>
+#+END_EXPORT
+
+#+ATTR_HTML: :class dialogue :border nil :cellspacing nil :cellpadding :frame nil :rules nil
+| Me | listen to this goofy definition: "a list is a chain of conses in which the car of each cons is an element of the list, and the cdr of each cons is either the next link in the chain or a terminating atom".[fn:: this is how the List class is defined in http://clhs.lisp.se/Body/t_list.htm]  |
+| Me | ...                                                                                                                   |
+| Me | ...now that I've said that out loud, it makes total sense.                                                            |
+| J  | yeah it does.                                                                                                         |
+| Me | but it isn't how /Learn Python in 7 Minutes/ would have defined it.                                                   |
+| J  | ...                                                                                                                |
+
+I guess you either die a hero, or live to see yourself become the villain. I feel like I don't properly learn things anymore, let alone derive happiness from doing so. Recently I found myself needing to reference the quote on the top of this blog. It's managed to stick to me for the five or so years since I'd come across it. I had forgotten where it was from, and found myself searching through old lisp textbooks for similar quotes and anecdotes. In doing so, I was unexpectedly hit with a strong sense of nostalgia, and memories of a better time. That was when I got the idea to write this blog post.
+
+But enough melancholy babble for now, below are some resources to help you become acquainted with common lisp. It's a pretty good starting point, and you could always pivot to clojure or racket or something. There's also a list of lisp projects I use personally and would recommend.
+
+* Resources
+- [[https://www.cs.cmu.edu/~dst/LispBook/book.pdf][Common Lisp: A Gentle Introduction to Symbolic Computation]]
+- [[https://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/cltl2.html][Common Lisp the Language, 2nd Edition]]
+- [[https://gigamonkeys.com/book/][Practical Common Lisp]]
+- [[https://web.mit.edu/6.001/6.037/sicp.pdf][Structure and Interpretation of Computer Programs]]
+- [[https://lispcookbook.github.io/cl-cookbook/][The Common Lisp Cookbook]]
+
+* Projects
+I'm currently interested in the following lisp projects. Hopefully this list increases with time.
+
+- GNU Guix
+- StumpWM
+- Emacs
+
+I've also recently been made aware of [[https://www.gnu.org/software/mes/][GNU Mes]], which is pretty cool as a concept.

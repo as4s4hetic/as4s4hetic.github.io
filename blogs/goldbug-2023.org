@@ -1,4 +1,4 @@
-#+TITLE: Gold Bug Puzzle Hunt
+#+TITLE: Gold bug puzzle hunt
 #+DATE: <2023-08-30 Wed>
 
 So I went to my first DEFCON this year, and was not remotely prepared for the sheer amount of competitions, games, and pure mischief that it offered. Luckily, before I could become overwhelmed with decision-making anxiety at the prospect of choosing an activity, I noticed the Gold Bug puzzle hunt folks in the competition hall.

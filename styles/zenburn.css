@@ -69,3 +69,11 @@ div.mono {
 blockquote {
     font-style: italic;
 }
+
+div.footpara {
+    font-size: 13px;
+}
+
+sup {
+    font-size: 10px;
+}

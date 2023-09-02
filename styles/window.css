@@ -1,0 +1,22 @@
+.window, .window-title {
+    border-color: var(--fg-white);
+    border-style: solid;
+}
+
+.window {
+    border-width: 1px;
+    padding: 0 1em 0 1em;
+
+}
+
+.window-title {
+    border-width: 1px 1px 0 1px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: var(--fg-white);
+    color: var(--bg-grey);
+}
+	    
+.window-title p {
+    margin: 0;
+}

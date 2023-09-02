@@ -1,3 +1,11 @@
+#+options: title:nil
+
+#+begin_window-title
+chsh's Blorg
+#+end_window-title
+
+#+begin_window
+[[./images/christmas-kacheek.png]]
 Hello! Welcome to my blorg! It's like a normal blog, but written in [[https://orgmode.org/][org mode]].
 
 Some things about me:
@@ -6,5 +14,4 @@ Some things about me:
 - [[https://au.linkedin.com/in/chuanshu-jiang-25aa88184][I work as a security consultant]]
 - [[https://haxx.group/][I teach hackers]]
 - [[https://twitter.com/0xchsh][I make memes sometimes]]
-
------
+#+end_window

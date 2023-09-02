@@ -26,6 +26,11 @@
 	""
       (concat head (concat-list (cdr list))))))
 
+(defun add-org-class (string class)
+  (format "#+begin_%s
+%s
+#+end_%s" class string class))
+
 ;; make header with all styles in styles-dir
 
 (defun make-style-head (file)

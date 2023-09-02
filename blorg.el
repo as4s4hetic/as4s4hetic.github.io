@@ -78,7 +78,7 @@
 " index-title))
 
 (setq list-format "
-* [[%s][%s]]
+[[%s][%s]]
 %s
 %s")
 
@@ -137,7 +137,7 @@
   (erase-buffer)
   (insert index-head)
   (insert-file-as-string index-blurb)
-  (insert (make-blog-list blog-properties))
+  (insert (add-org-class (make-blog-list blog-properties) "blorg-list"))
   (save-buffer)
   (org-html-export-to-html)
   (kill-buffer (current-buffer)))

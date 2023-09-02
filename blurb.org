@@ -15,3 +15,7 @@ Some things about me:
 - [[https://haxx.group/][I teach hackers]]
 - [[https://twitter.com/0xchsh][I make memes sometimes]]
 #+end_window
+
+#+begin_window-title
+Blorg List
+#+end_window-title

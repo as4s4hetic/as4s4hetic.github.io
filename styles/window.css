@@ -1,12 +1,12 @@
-.window, .window-title {
+.window, .window-title, .blorg-list {
     border-color: var(--fg-white);
     border-style: solid;
 }
 
-.window {
+.window, .blorg-list {
     border-width: 1px;
     padding: 0 1em 0 1em;
-
+    margin-bottom: 1em;
 }
 
 .window-title {
@@ -19,4 +19,11 @@
 	    
 .window-title p {
     margin: 0;
+}
+
+.blorg-list p a {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 8px;
 }

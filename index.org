@@ -24,9 +24,6 @@ Blorg List
 #+end_window-title
 #+begin_blorg-list
 
-[[./blogs/gardner-best.html][Puzzled Rankings]]
-2023-09-01
-
 [[./blogs/lisp.html][Learn yourself a lisp]]
 2023-09-01
 

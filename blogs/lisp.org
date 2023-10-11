@@ -7,7 +7,7 @@ A friend of mine was once interviewing an engineer for a programming job and ask
 
 [[https://imgs.xkcd.com/comics/lisp_cycles.png]]
 
-The other day I found myself browsing the internet for the quote at the start of this blog. It's a good one, I got a lot of mileage out of it in high school and university, but I'd forgotten most of the wording since then. I knew it was from a Lisp textbook, but I'd forgotten which one exactly. Inevitably, I fell down a bit of a rabbit hole and eventually started narrating my endeavours to J. Here's an excerpt of said conversation:
+The other day I found myself browsing the internet for the quote at the start of this blog. It's a good one, I got a lot of mileage out of it in high school and university, but the exact wording eludes me from time to time. I knew it was from a Lisp textbook, but I'd forgotten which one exactly. Inevitably, I fell down a bit of a rabbit hole and eventually started narrating my endeavours to J. Here's an excerpt of said conversation:
 
 | Me | listen to this goofy definition: "a list is a chain of conses in which the car of each cons is an element of the list, and the cdr of each cons is either the next link in the chain or a terminating atom".[fn:: this is how the List class is defined in http://clhs.lisp.se/Body/t_list.htm] |
 | Me | ...                                                                                                      |

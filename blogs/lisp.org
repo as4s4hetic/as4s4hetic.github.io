@@ -7,11 +7,20 @@ A friend of mine was once interviewing an engineer for a programming job and ask
 
 [[https://imgs.xkcd.com/comics/lisp_cycles.png]]
 
-@@html:<div id="year">@@This is a blog written mostly to motivate myself, and hopefully someone who stumbles upon it, to keep learning and writing lisps. One may ask: "What can I even do with lisp in {YEAR}?", and my answer to that would be: almost anything, but you /probably shouldn't. That would make it like JavaScript/ [fn:: There are languages that are good and holy, and then there are languages like JavaScript.].
+The other day I found myself browsing the internet for the quote at the start of this blog. It's a good one, I got a lot of mileage out of it in high school and university, but I'd forgotten most of the wording since then. I knew it was from a Lisp textbook, but I'd forgotten which one exactly. Inevitably, I fell down a bit of a rabbit hole and eventually started narrating my endeavours to J. Here's an excerpt of said conversation:
 
-Don't get me wrong, I'm not a functional purist by any means, +I can barely function on a good day,+ and although I don't mind a bit of Haskell snobbery, if you asked me what a monad was, I'd probably panic and stutter and and tell you something incorrect. My job requires a fair bit of programming, but more importantly it requires literacy in pretty much all the languages under the sun, so I can browse through other (rushed and often mistreated) people's code to make sure none of it is hiding anything oogly boogly. This has regrettably caused in me an attitude shift towards programming. Take, for example, the following conversation I had with a friend, J:
+| Me | listen to this goofy definition: "a list is a chain of conses in which the car of each cons is an element of the list, and the cdr of each cons is either the next link in the chain or a terminating atom".[fn:: this is how the List class is defined in http://clhs.lisp.se/Body/t_list.htm] |
+| Me | ...                                                                                                      |
+| Me | ...now that I've said that out loud, it makes total sense.                                               |
+| J  | yeah it does.                                                                                            |
+| Me | but it isn't how /Learn Python in 7 Minutes/ would have defined it.                                      |
+| J  | ...                                                                                                      |
 
+@@html:<div id="year">@@
+Regardless of whether or not I saved myself from sounding like an idiot, my unconscious attitude here has been bothering me for reasons too difficult to explain. But have some advice: go learn yourself a lisp! I've included a list of books I dug up in my expedition down the rabbit hole -- you definitely don't need to read all of them, but most are fun to skim through. 
 @@html:</div>@@
+
+And before anyone asks, I'm not a functional purist by any means, +I can barely function on a good day,+ I just think everyone should experience the joys of microdosing on a macro once in a while :)
 
 #+BEGIN_EXPORT html
 <script type = "text/javascript">
@@ -26,16 +35,6 @@ Don't get me wrong, I'm not a functional purist by any means, +I can barely func
 #+END_EXPORT
 
 #+ATTR_HTML: :class dialogue :border nil :cellspacing nil :cellpadding :frame nil :rules nil
-| Me | listen to this goofy definition: "a list is a chain of conses in which the car of each cons is an element of the list, and the cdr of each cons is either the next link in the chain or a terminating atom".[fn:: this is how the List class is defined in http://clhs.lisp.se/Body/t_list.htm]  |
-| Me | ...                                                                                                                   |
-| Me | ...now that I've said that out loud, it makes total sense.                                                            |
-| J  | yeah it does.                                                                                                         |
-| Me | but it isn't how /Learn Python in 7 Minutes/ would have defined it.                                                   |
-| J  | ...                                                                                                                |
-
-I guess you either die a hero, or live to see yourself become the villain. I feel like I don't properly learn things anymore, let alone derive happiness from doing so. Recently I found myself needing to reference the quote on the top of this blog. It's managed to stick to me for the five or so years since I'd come across it. I had forgotten where it was from, and found myself searching through old lisp textbooks for similar quotes and anecdotes. In doing so, I was unexpectedly hit with a strong sense of nostalgia, and memories of a better time. That was when I got the idea to write this blog post.
-
-But enough melancholy babble for now, below are some resources to help you become acquainted with common lisp. It's a pretty good starting point, and you could always pivot to clojure or racket or something. There's also a list of lisp projects I use personally and would recommend.
 
 * Resources
 - [[https://www.cs.cmu.edu/~dst/LispBook/book.pdf][Common Lisp: A Gentle Introduction to Symbolic Computation]]
@@ -45,10 +44,9 @@ But enough melancholy babble for now, below are some resources to help you becom
 - [[https://lispcookbook.github.io/cl-cookbook/][The Common Lisp Cookbook]]
 
 * Projects
-I'm currently interested in the following lisp projects. Hopefully this list increases with time.
+These projects are super cool and good! This list is a bit sad though, so please ping me about your favourite lisp project if you have one. 
 
 - GNU Guix
 - StumpWM
 - Emacs
-
-I've also recently been made aware of [[https://www.gnu.org/software/mes/][GNU Mes]], which is pretty cool as a concept.
+- [[https://www.gnu.org/software/mes/][GNU Mes]]

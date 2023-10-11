@@ -9,6 +9,4 @@ I was once an avid puzzler (n. one who participates in puzzle hunts) and puzzlin
 
 The hunt was really fun. I had a hand in solving most of the puzzles, but I particularly enjoyed the Arcade for its cute interface, and the Meta puzzle, which turned out to have quite an elegant mechanism. The puzzles ranged from conventional hunt-style to challenges that could have belonged in the Cryptography category of a CTF (at least to someone who mostly just watches the Crypto CTFers juggle their funny numbers). 
 
-The only thing better than puzzling is puzzling with friends, and thanks to my elite nerd-sniping skills, I happened to be conning defs with a bunch of friends who were just as eager to get this bug as I was. The rest goes without saying - I've since heard that it's a typical defcon experience. All nighters were pulled, meals were skipped, showers were... you get the point. We ended up winning the bug though, so I reckon it was all worth it.
-
 In case you try and get stuck on any of the puzzles, my team wrote up all the solutions [[https://hackmd.io/@oce-best/SkRXMyPh3][here]]. Be warned though, it contains major spoilers.

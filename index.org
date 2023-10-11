@@ -16,7 +16,7 @@ Some things about me:
 - [[https://au.linkedin.com/in/chuanshu-jiang-25aa88184][I work as a security consultant]]
 - [[https://haxx.group/][I teach hackers]]
 
-You can find my less coherent babblings on [[https://twitter.com/0xchsh][Twitter]]
+You can also find my less coherent babblings on [[https://twitter.com/0xchsh][Twitter]].
 #+end_window
 
 #+begin_window-title

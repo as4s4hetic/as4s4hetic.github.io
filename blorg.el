@@ -1,6 +1,7 @@
 (setq blogs-dir "./blogs")
 (setq styles-dir "./styles")
 (setq index-blurb "./blurb.org")
+(setq other-blogs "./remote.org")
 (setq index-title "Blorg")
 (setq curr-dir (file-name-directory buffer-file-name))
       
@@ -77,11 +78,6 @@
 #+TITLE: %s
 " index-title))
 
-(setq list-format "
-[[%s][%s]]
-%s
-%s")
-
 (defun org-title (f)
   (save-excursion
     (find-file f)
@@ -114,6 +110,20 @@
 
 (setq blog-properties (sort-blogs blog-properties))
 
+;; makes title for blorg list
+(setq title-format "#+begin_window-title
+%s
+#+end_window-title
+")
+
+(defun make-title (s)
+  (format title-format s))
+
+(setq list-format "
+[[%s][%s]]
+%s
+%s")
+
 (defun make-blog-list (l)
   (if (not l)
       ""
@@ -124,20 +134,25 @@
 	      (caddr blog)
               (make-blog-list (cdr l))))))
 
-(defun insert-file-as-string (f)
-  (insert 
+(defun file-as-string (f)
    (if (file-exists-p f)
        (with-temp-buffer
 	 (insert-file-contents f)
 	 (buffer-string))
-     "")))
+     ""))
+
 
 (defun make-index ()
   (find-file "index.org")
   (erase-buffer)
   (insert index-head)
-  (insert-file-as-string index-blurb)
+  (insert (file-as-string index-blurb))
+  (insert (make-title "Blorg List"))
   (insert (add-org-class (make-blog-list blog-properties) "blorg-list"))
+  (insert "
+")
+  (insert (make-title "Blogs I have authored elsewhere"))
+  (insert (add-org-class (file-as-string other-blogs) "blorg-list"))
   (save-buffer)
   (org-html-export-to-html)
   (kill-buffer (current-buffer)))

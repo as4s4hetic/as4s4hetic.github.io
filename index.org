@@ -24,7 +24,7 @@ Blorg List
 #+end_window-title
 #+begin_blorg-list
 
-[[./blogs/conversation-sans-chsh-huineng.html][Conversation between Sans Undertale, the Cheshire Cat, and Huineng]]
+[[./blogs/conversation-sans-chsh-huineng.html][Conversation between Huineng, the Cheshire Cat, and Sans Undertale]]
 2023-10-22
 
 [[./blogs/lisp.html][Learn yourself a lisp]]

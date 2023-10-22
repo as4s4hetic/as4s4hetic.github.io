@@ -9,7 +9,7 @@ This is a conversation written by ChatGPT according to the following prompt:
 #+END_QUOTE
 
 #+ATTR_HTML: :width 300px
-#+ATTR_HTML: :style image-rendering: pixelated
+#+ATTR_HTML: :style image-rendering: pixelated; border: 3px solid
 [[../images/zen-0.png]]
 
 | Sans         | /(Grinning)/ Hey there, folks. So, I've heard you Zen types like to talk about "mu". What's the deal with that, anyway?                                                                                   |
@@ -21,4 +21,3 @@ This is a conversation written by ChatGPT according to the following prompt:
 | Sans         | /(Chuckling)/ I get it now. It's like a shortcut to that "deep sense of not knowing" you talked about, Huineng. So, how do you apply "mu" in everyday life?                                               |
 | Huineng      | /(Nodding)/ Well, Sans, it's about letting go of fixed ideas and preconceptions, just like the Cheshire Cat's appearances and disappearances. Embrace the uncertainty, and you'll find clarity.           |
 | Cheshire Cat | /(Fading into a grin)/ And remember, it's all a matter of perspective. What's "mu" for one might be a grin for another. It's all a grand puzzle, really.                                                  |
-

@@ -1,0 +1,43 @@
+#+TITLE: Conversation between Ikkyu Sojun, Gilles Deleuze, and Erwin Schrödinger
+#+DATE: <2023-10-23 Mon>
+#+OPTIONS: toc:nil
+
+This is a conversation written by ChatGPT according to the following prompt:
+
+#+BEGIN_QUOTE
+/Ikkyu Sojun, Giles[sic] Deleuze, and Erwin Schrödinger have a discussion about phenomenology/
+#+END_QUOTE
+
+These three characters were chosen specifically for their work on topics that draw curious parallels between their respective schools of thought.
+
+*Ikkyu Sojun* was a Zen monk to whom the koan[fn::A koan is a paradoxical or perplexing anecdote used in Zen Buddhism to stimulate zazen, a deep meditative awareness that transcends dualistic thinking] [[https://www.pacificzen.org/library/ikkyus-well-the-miscellaneous-koans/][Ikkyu's well]] is attributed.
+
+#+BEGIN_QUOTE
+/In a well that has not been dug, water from no source is rippling./
+
+/Someone with no shadow or form is drawing that water./
+#+END_QUOTE
+
+This koan relates to the Zen concepts of form (色) emptiness (空), most famously referenced in the heart sutra:
+#+BEGIN_QUOTE
+/色即是空，空即是色/
+
+/form is emptiness, emptiness is form/
+#+END_QUOTE
+
+*Gilles Deleuze*, whose name I have been misspelling for years, was a continental post-structurist philosopher whose work focuses on the idea of "becoming", the idea that reality is constantly in a state of change, and challenges the concept of identity within a fluid world.
+
+
+*Erwin Schrödinger* was a physicist who is best known for his thought experiment "Schrödinger's cat", a metaphor for /quantum superposition/. In a quantum world, there is no fixed reality. Instead, what is real is modeled as a combination of possible states (superposition), which only collapses to something concrete upon observation.
+
+ChatGPT: Imagining a conversation between Ikkyu Sojun, Gilles Deleuze, and Erwin Schrödinger about phenomenology would be a fascinating and intellectually stimulating endeavor. Each of these individuals represents a unique perspective on the subject, with their own backgrounds and ideas. Let's envision a dialogue among them:
+
+| Ikkyu Sojun       | (Sipping tea thoughtfully) Well, my friends, let's delve into the essence of experience, the heart of phenomenology. In my Zen practice, we seek direct, unmediated experience. We must strip away the layers of conceptualization to find the pure, unconditioned self. How does this relate to your thoughts on the matter? |
+| Gilles Deleuze    | (Stroking his chin) Indeed, Ikkyu. I see phenomenology as an exploration of the multiplicities of experience. It's about the becoming, the process of experience itself. We can't simply reduce it to a fixed essence. It's a dynamic interplay of intensities, flows, and events. But, Erwin, I'm curious about your perspective from the world of physics. |
+| Erwin Schrödinger | (Nods) In the realm of quantum physics, we grapple with the fundamental role of observation in shaping reality. Phenomenology, in a sense, resonates with this idea. The act of measurement collapses the wave function, bringing forth a specific experience. Yet, our quantum world is inherently indeterminate. It's an intriguing paradox, wouldn't you agree? |
+| Ikkyu Sojun       | (Smiles) Ah, the paradoxes of existence. In my practice, we also confront paradoxes, such as the unity of emptiness and form. It's in these paradoxes that we find the richness of experience. So, in a way, phenomenology might be a path to embracing these paradoxes. |
+| Gilles Deleuze    | (Excitedly) I couldn't agree more, Ikkyu. Phenomenology should embrace multiplicity and complexity. Let's not reduce experience to simple categories or binary oppositions. We must explore the nuances, the differences that make experience vibrant and alive. |
+| Erwin Schrödinger | (Contemplatively) It's fascinating how our discussions about phenomenology mirror some of the deepest questions in physics. The observer, the observed, and the act of observation are intertwined in a complex dance. Could it be that our understanding of the self and consciousness also ties into these intricate patterns? |
+| Ikkyu Sojun       | (With a knowing look) Indeed, Erwin, the self, and consciousness, as I see them, are not isolated entities but part of the vast interconnected web of existence. Perhaps, in the heart of phenomenology, we can find the unity in this diversity. |
+| Gilles Deleuze    | (With enthusiasm) So, let's continue our exploration of the multiplicities of experience, the paradoxes of existence, and the interconnectedness of all things. Phenomenology, as we've discussed, is a gateway to these profound inquiries. |
+

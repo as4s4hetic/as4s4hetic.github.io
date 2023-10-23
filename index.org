@@ -24,6 +24,9 @@ Blorg List
 #+end_window-title
 #+begin_blorg-list
 
+[[./blogs/conversation-ikkyu-deleuze-schrodinger.html][Conversation between Ikkyu Sojun, Gilles Deleuze, and Erwin Schrödinger]]
+2023-10-23
+
 [[./blogs/conversation-sans-chsh-huineng.html][Conversation between Huineng, the Cheshire Cat, and Sans Undertale]]
 2023-10-22
 

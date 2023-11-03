@@ -24,6 +24,9 @@ Blorg List
 #+end_window-title
 #+begin_blorg-list
 
+[[./blogs/the-frog-in-the-hotel.html][The Frog in the Hotel]]
+2023-11-03
+
 [[./blogs/conversation-ikkyu-deleuze-schrodinger.html][Conversation between Ikkyu Sojun, Gilles Deleuze, and Erwin Schrödinger]]
 2023-10-23
 

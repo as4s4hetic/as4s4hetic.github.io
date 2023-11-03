@@ -1,0 +1,34 @@
+#+TITLE: The Frog in the Hotel
+#+DATE: <2023-11-03 Fri>
+#+OPTIONS: toc:nil
+It was a sunny day when two friends, Georg and David, were overheard having a conversation:
+
+| Georg | Why David, you seem troubled today - are those guests of yours being difficult again?                    |
+| David | No- well, yes. But it isn't about accomodation this time.                                                |
+| Georg | Oh?                                                                                                      |
+| David | You see, one of the guests has brought a frog into the hotel.                                            |
+| Georg | A /frog/?                                                                                                |
+| David | Yes, and it has caused quite a scene. You see, this species of frog never rests, and it's known for breaking the constraints of space-time as it travels. Each minute, the frog performs its quantum leap, passing through any barriers in its way. |
+| Georg | I see, so each minute, the frog moves into a new room?                                                   |
+| David | That is correct. Curiously, these creatures cannot control their powers, as each leap takes them a fixed distance forward. Nor can they adjust their direction - once they are born, they remain facing the same way until the end of time. |
+| Georg | Who would bring such a creature into a hotel! So I take it that you are trying to retrieve this frog?    |
+| David | Not only that, but we would also like to figure out the culprit behind this mess.                        |
+| Georg | That makes sense.                                                                                        |
+| David | Oh, there's one more thing.                                                                              |
+| Georg | Yes?                                                                                                     |
+| David | Since we last met, we've decided to expand the hotel. We have basement levels now, with room numbers $-1$, $-2$, and so on. |
+| Georg | Why, that isn't an expansion at all!                                                                     |
+| David | I see you're as sharp as always, Georg.                                                                  |
+
+Fortunately for David, his friend Georg was indeed sharp, and the frog was found in finite time. After the fact, they were also able to deduce the original time and location the frog was released. Unfortunately for the pair, the frog disappeared within a minute, and the two set off once more...
+
+-------
+
+*Author's note:*
+
+This story was inspired by a puzzle posted on a discord server, with the exact wording below:
+
+/Suppose that there is a number line of the integers, and there is a frog on an unknown (integer) position $a$ on the line. Each second ($t=0,1,\ldots$), the frog jumps to the right by $u$ steps (or left by $u$ steps if $u$ is negative). At each second ($t=0,1,\ldots$), you can choose $q$ and check whether the frog is at position $q$./
+/Prove that you can recover ($a, u$) in finite time./
+
+It also seems to be related to this puzzle posted on [[https://math.stackexchange.com/questions/1085980/puzzle-give-an-algorithm-for-finding-a-frog-that-jumps-along-the-number-line][maths stack exchange]], on which someone has commented that /"This sounds like a (Martin Gardner?) problem I have heard before, only that one involved bombing a submarine instead of findind(sic) a frog."/. Welp, I guess it's time to finish off my blog post on Gardiner puzzles...

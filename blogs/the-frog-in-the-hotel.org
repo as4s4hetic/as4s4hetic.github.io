@@ -3,7 +3,7 @@
 #+OPTIONS: toc:nil
 It was a sunny day when two friends, Georg and David, were overheard having a conversation:
 
-| Georg | Why David, you seem troubled today - are those guests of yours being difficult again?                    |
+| Georg | Why Dave, you seem troubled today - are those guests of yours being difficult again?                     |
 | David | No- well, yes. But it isn't about accomodation this time.                                                |
 | Georg | Oh?                                                                                                      |
 | David | You see, one of the guests has brought a frog into the hotel.                                            |

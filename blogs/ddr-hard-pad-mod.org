@@ -27,7 +27,7 @@ Based off of https://www.angelfire.com/pro2/softpadmod/ but its down under
 | Double sided tape |   1 |     14.98 |  14.98 |
 |                   |     |           | 107.45 |
 #+TBLFM: $4=$2*$3::@>$4=vsum(@2..@-1)
-It's not cheap but its less than half of the cost of shipping for an LTEK 
+It's not cheap but its less than half of the cost of shipping an LTEK 
 
 * Construction
 Follow Angelfire's blog now that you have all the materials. I found that it was the easiest to tape the 2 vinyl sheets together on the long edge, wrap it around the top of the board then trim off the remaining ~50cm. I ended up with two $50\times57$ cm pieces, which could then be cut into four sets of three $25\times19$ cm bumps

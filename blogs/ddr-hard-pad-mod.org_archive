@@ -1,0 +1,25 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/chsh/as4s4hetic.github.io/blogs/ddr-hard-pad-mod.org
+
+
+* Cost breakdown (as of Sept 2024)
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-09-01 Sun 22:38
+:ARCHIVE_FILE: ~/as4s4hetic.github.io/blogs/ddr-hard-pad-mod.org
+:ARCHIVE_OLPATH: Bunnings shopping list (not sponsored)
+:ARCHIVE_CATEGORY: ddr-hard-pad-mod
+:END:
+| Component         | Qty | Unit cost |   Cost |
+|-------------------+-----+-----------+--------|
+| Soft pad          |   1 |     27.49 |  27.49 |
+| Wooden board      |   1 |        41 |     41 |
+| Vinyl sheet       |   2 |         5 |     10 |
+| Gaffa tape        |   2 |      6.99 |  13.98 |
+| Double sided tape |   1 |     14.98 |  14.98 |
+| Packing tape      |   1 |         7 |      7 |
+|                   |     |           | 114.45 |
+#+TBLFM: $4=$2*$3::@>$4=vsum(@2..@-1)
+It's not cheap but its less than half of the cost of shipping an LTEK 
+

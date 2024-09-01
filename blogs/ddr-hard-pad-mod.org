@@ -25,7 +25,8 @@ Based off of https://www.angelfire.com/pro2/softpadmod/ but its down under
 | Vinyl sheet       |   2 |         5 |     10 |
 | Gaffa tape        |   2 |      6.99 |  13.98 |
 | Double sided tape |   1 |     14.98 |  14.98 |
-|                   |     |           | 107.45 |
+| Packing tape      |   1 |         7 |      7 |
+|                   |     |           | 114.45 |
 #+TBLFM: $4=$2*$3::@>$4=vsum(@2..@-1)
 It's not cheap but its less than half of the cost of shipping an LTEK 
 

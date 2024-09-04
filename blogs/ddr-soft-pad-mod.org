@@ -1,6 +1,6 @@
 #+TITLE: DDR soft pad mod (aussie edition)
 #+DATE: <2024-09-01 Sun>
-#+OPTIONS: title:nil date:nil html-postamble:nil toc:nil
+#+OPTIONS: date:nil html-postamble:nil toc:nil
 
 Based off of https://www.angelfire.com/pro2/softpadmod/ but its down under
 - Soft pad: https://www.amazon.com.au/OSTENT-Non-Slip-Dancing-Blanket-Compatible/dp/B00FJ2KTXC

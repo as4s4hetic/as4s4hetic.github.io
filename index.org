@@ -24,7 +24,7 @@ Blorg List
 #+end_window-title
 #+begin_blorg-list
 
-[[./blogs/ddr-hard-pad-mod.html][DDR soft pad mod (aussie edition)]]
+[[./blogs/ddr-soft-pad-mod.html][DDR soft pad mod (aussie edition)]]
 2024-09-01
 
 [[./blogs/the-frog-in-the-hotel.html][The Frog in the Hotel]]

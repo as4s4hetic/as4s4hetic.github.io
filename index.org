@@ -50,6 +50,15 @@ Blorg List
 
 #+end_blorg-list
 #+begin_window-title
+Talks
+#+end_window-title
+#+begin_blorg-list
+[[./talks/SSO-Ruxmon-Aug-2024.pdf][You Only Login Once - Ruxmon Melbourne August 2024]]
+2024-08-30
+
+
+#+end_blorg-list
+#+begin_window-title
 Blogs I have authored elsewhere
 #+end_window-title
 #+begin_blorg-list

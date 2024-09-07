@@ -2,6 +2,7 @@
 (setq styles-dir "./styles")
 (setq index-blurb "./blurb.org")
 (setq other-blogs "./remote.org")
+(setq talks "./talks.org")
 (setq index-title "Blorg")
 (setq curr-dir (file-name-directory buffer-file-name))
       
@@ -151,9 +152,17 @@
   (insert (add-org-class (make-blog-list blog-properties) "blorg-list"))
   (insert "
 ")
+  ; Talks
+  (insert (make-title "Talks"))
+  (insert (add-org-class (file-as-string talks) "blorg-list"))
+  (insert "
+")
+  ; Other blogs
   (insert (make-title "Blogs I have authored elsewhere"))
   (insert (add-org-class (file-as-string other-blogs) "blorg-list"))
   (save-buffer)
+
+  ; Exports
   (org-html-export-to-html)
   (kill-buffer (current-buffer)))
 

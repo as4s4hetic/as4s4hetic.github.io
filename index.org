@@ -62,16 +62,16 @@ Talks
 Blogs I have authored elsewhere
 #+end_window-title
 #+begin_blorg-list
-[[https://sheasecurity.com.au/intro-to-oauth-security/][Introduction to OAuth Security]]
+[[https://sheasecurity.com.au/2023/10/06/intro-to-oauth-security/][Introduction to OAuth Security]]
 2023-10-06
 
-[[https://sheasecurity.com.au/iccc-2023/][Competing in the International Cyber Security Challenge 2023]]
+[[https://sheasecurity.com.au/2023/09/05/iccc-2023/][Competing in the International Cyber Security Challenge 2023]]
 2023-09-05
 
-[[https://sheasecurity.com.au/ibm-informix-building-a-proof-of-concept-for-blind-sql-injections/][IBM Informix – Building a proof of concept for blind SQL Injections]]
+[[https://sheasecurity.com.au/2022/12/22/ibm-informix-building-a-proof-of-concept-for-blind-sql-injections/][IBM Informix – Building a proof of concept for blind SQL Injections]]
 2022-12-22
 
-[[https://sheasecurity.com.au/icc-2022/][Competing in the International Cyber Security Challenge 2022]]
+[[https://sheasecurity.com.au/2022/07/20/icc-2022/][Competing in the International Cyber Security Challenge 2022]]
 2022-07-20
 
 [[https://tck.mn/transalg/][Transcendental Algebra]]

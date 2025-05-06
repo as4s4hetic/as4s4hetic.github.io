@@ -1,6 +1,6 @@
-[[./talks/Web-BSides_Ballarat-May-2025.pdf][Unravelling the Web - BSides Ballarat May 2025]]
+[[./talks/Web-BSides_Ballarat-May-2025.pdf][Unravelling the Web – BSides Ballarat May 2025]]
 2025-05-04
 
-[[./talks/SSO-Ruxmon-Aug-2024.pdf][You Only Login Once - Ruxmon Melbourne August 2024]]
+[[./talks/SSO-Ruxmon-Aug-2024.pdf][You Only Login Once – Ruxmon Melbourne August 2024]]
 2024-08-30
 

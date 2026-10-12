@@ -13,10 +13,10 @@ Hello! Welcome to my blorg! It's like a normal blog, but written in [[https://or
 Some things about me:
 - [[https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach][I am a strange loop]]
 - I like puzzles, CTFs, linguistics, and maths
-- [[https://au.linkedin.com/in/chuanshu-jiang-25aa88184][I work as a security consultant]]
-- [[https://haxx.group/][I teach hackers]]
+- I make drawings, puzzles, and website designs for my CTF team [[https://sk8boarding.dog/][skateboarding dog]]
+- I love to hang with my peeps at the [[https://feralcomputer.club/][feral computer club]]
 
-You can also find my less coherent babblings on [[https://twitter.com/0xchsh][Twitter]].
++You can also find my less coherent babblings on [[https://twitter.com/0xchsh][Twitter]].+ I've stopped using that site.
 #+end_window
 
 #+begin_window-title
